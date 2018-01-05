@@ -774,7 +774,7 @@ static int set_current_call(struct re_printf *pf, void *arg)
 }
 
 
-static int set_bitrate(struct re_printf *pf, void *arg)
+static int set_audio_bitrate(struct re_printf *pf, void *arg)
 {
 	struct cmd_arg *carg = arg;
 	struct call *call;
@@ -805,7 +805,7 @@ static const struct cmd callcmdv[] = {
 {"hold",      'x',        0, "Call hold",           cmd_call_hold         },
 {"",          'H',        0, "Hold previous call",  hold_prev_call        },
 {"",          'L',        0, "Resume previous call",hold_prev_call        },
-{"bitrate",     0,  CMD_PRM, "Set audio bitrate",   set_bitrate           },
+{"aubitrate",   0,  CMD_PRM, "Set audio bitrate",   set_audio_bitrate     },
 
 #ifdef USE_VIDEO
 {"video_cycle", 'E',      0, "Cycle video encoder", call_videoenc_cycle   },
