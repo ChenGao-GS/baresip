@@ -870,7 +870,6 @@ struct aucodec {
 	audec_plc_h    *plch;
 	sdp_fmtp_enc_h *fmtp_ench;
 	sdp_fmtp_cmp_h *fmtp_cmph;
-
 	auenc_encode_fmt_h *encfmth;
 	audec_decode_fmt_h *decfmth;
 };
