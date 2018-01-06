@@ -276,9 +276,6 @@ int config_parse_conf(struct config *cfg, const struct conf *conf)
 	conf_get_aufmt(conf, "auenc_format", &cfg->audio.enc_fmt);
 	conf_get_aufmt(conf, "audec_format", &cfg->audio.dec_fmt);
 
-	conf_get_aufmt(conf, "auenc_format", &cfg->audio.enc_fmt);
-	conf_get_aufmt(conf, "audec_format", &cfg->audio.dec_fmt);
-
 #ifdef USE_VIDEO
 	/* Video */
 	(void)conf_get_csv(conf, "video_source",
